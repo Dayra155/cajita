@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Cumpleaños Cajita</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://wallpapers.com/images/hd/radiator-springs-054lrrr8uz53nt40.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Bangers', cursive;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 20px;
+            border: 4px solid gold;
+            box-shadow: 0 0 20px yellow;
+        }
+
+        .banner {
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+        }
+
+        .mate {
+            position: absolute;
+            top: 300px;
+            width: 150px;
+            animation: moveMate 9s linear infinite alternate;
+        }
+
+        @keyframes moveMate {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: calc(100% - 150px);
+            }
+        }
+
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background: radial-gradient(circle at 30% 30%, gold, #ffaa00);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: absolute;
+            bottom: -100px;
+            animation: floatUp 8s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        #playButton,
+        #carsButton,
+        #toggleStoryButton {
+            margin: 20px 10px 0 10px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-family: 'Bangers', cursive;
+            border: none;
+            background-color: #ffcc00;
+            color: #000;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        #playButton:hover,
+        #carsButton:hover,
+        #toggleStoryButton:hover {
+            background-color: #ffd700;
+            transform: scale(1.05);
+        }
+
+        .story-box {
+            display: none;
+            position: fixed;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 300px;
+            max-height: 80vh;
+            overflow-y: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #000;
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            z-index: 1000;
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏁 ¡Feliz cumpleaños Cajita! 🏁</h1>
+
+     <!-- Mate animado -->
+     <img src="omg.png" alt="Mate" class="mate">
+
+
+   
+
+    <!-- Botones -->
+    <div>
+        <button id="playButton">🎵 Reproducir música con el pastel</button>
+        <button id="toggleStoryButton">🏎️ Ver historia</button>
+    </div>
+
+    <!-- Audios -->
+    <audio id="bgMusic" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="carsMusic" loop>
+        <source src="cars.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Historia oculta -->
+    <div class="story-box" id="storyBox">
+        <p>Había una vez una señorita que vivía en el muy, muy lejano San Simón. Su vida era tranquila: pasaba los días
+            viendo novelas junto a doña Chío y don Amando. Nada más le interesaba en el mundo, salvo esas historias
+            llenas de drama y ficción...🦸🏻‍♀️🐽</p>
+        <p>Hasta que un día, como por arte de magia, entró al Tec. Y fue entonces cuando Diosito le puso en el camino a
+            un señorito... un señorito amante del espacio y la tecnología.🌠</p>
+        <p>Al principio, la señorita no lo encontraba muy agradable —ya que decía cosas un tanto fuera de lugar—, pero todo
+            cambió un 2 de septiembre, cuando el señorito cayó en los encantos de ella. Ese día, decidió enviarle unas
+            estrellitas (¡muy curioso, ya que él adoraba todo lo que tuviera que ver con el universo!).✨</p>
+        <p>Desde entonces, ese señorito marcó la vida de la señorita. Todo lo relacionado con él se volvió prioridad en
+            su mundo.🫂</p>
+        <p>Hoy, por ejemplo, es un día muy, muy especial.<br>Es el Día de los Christianorlandos.<br>Se dice que hace 23
+            años, en esta misma fecha:</p>
+        <ul>
+            <li>Nacieron todas las flores 🌸,</li>
+            <li>Las vacas dieron leche 🐮,</li>
+            <li>Los pajaritos aprendieron a volar 🦉,</li>
+            <li>¡Y hasta el sol sintió celos! Porque cierto señorito brilló más que él.☀️</li>
+        </ul>
+        <p>Mi señorito…<br>Me complace informarle que ¡hoy es su cumpleañooooos 🎈!<br>Bueno… también es el cumpleaños de
+            la caja (¡vaya coincidencia!)📦🤍 <br>y, claro, el cumpleaños de Christianorlandooooo. 🧟‍♀️</p>
+        <p>¡Híjole, se me juntaron los amores! 🤠</p>
+        <p>Esto no es mucho, pero es trabajo honesto, y aunque la distancia no nos permita estar cerca, esperamos que le
+            guste. Hoy, Sosa lo acompañará por nosotros. La caja de huevo jsjs🍳</p>
+        <p>Lo amamos con todo nuestro corazón, señorito.<br>¡Provechito!🐽🤍</p>
+        <p><strong>P.D.:</strong> ¡Que le muerda, que le muerda, que le muerda…! lo empuja*🤍😮‍💨</p>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Globos
+        for (let i = 0; i < 30; i++) {
+            const balloon = document.createElement('div');
+            balloon.className = 'balloon';
+            balloon.style.left = `${Math.random() * 100}vw`;
+            balloon.style.animationDuration = `${5 + Math.random() * 5}s`;
+            document.body.appendChild(balloon);
+        }
+
+        // Música pastel
+        const bgMusic = document.getElementById("bgMusic");
+        const playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", function () {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                playButton.innerText = "⏸️ Pausar música";
+            } else {
+                bgMusic.pause();
+                playButton.innerText = "🎵 Reproducir música con el pastel";
+            }
+        });
+
+        // Mostrar/ocultar historia y controlar música de Cars
+        const storyBox = document.getElementById("storyBox");
+        const toggleStoryButton = document.getElementById("toggleStoryButton");
+        const carsMusic = document.getElementById("carsMusic");
+
+        toggleStoryButton.addEventListener("click", function () {
+            const isVisible = storyBox.style.display === "block";
+
+            if (isVisible) {
+                storyBox.style.display = "none";
+                toggleStoryButton.innerText = "🏎️ Ver historia";
+                carsMusic.pause();
+            } else {
+                storyBox.style.display = "block";
+                toggleStoryButton.innerText = "❌ Ocultar historia";
+                carsMusic.play();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
